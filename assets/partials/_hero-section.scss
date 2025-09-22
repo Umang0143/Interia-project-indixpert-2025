@@ -1,20 +1,46 @@
-.Hero-Section{
-    .swipe{
-        writing-mode:vertical-lr;
-        writing-mode:sideways-lr;
+.Hero-Section {
+    .swipe {
+        writing-mode: vertical-lr;
+        writing-mode: sideways-lr;
     }
-    .inset{
-        inset:0;
-    }
-    img{
-        object-fit: cover;
+
+    .inset {
+        inset: 0;
     }
 }
 
-// @media (max-width: 992px) {
-//   .content {
-//     display: flex;
-//     justify-content: end;
-//     align-items: center;
-//   }
-// }
+@media (max-width: 992px) {
+    .content {
+        font-size: 12px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        font-size: 10px;
+
+        h1 {
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .swipe {
+            writing-mode: horizontal-tb;
+            text-align: left;
+        }
+    }
+}
